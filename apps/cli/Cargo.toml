@@ -1,0 +1,15 @@
+[package]
+name = "cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+corelib = { path = "../../crates/corelib" }
+fundamentals = { path = "../../crates/fundamentals" }
+tracing.workspace = true
+tracing-subscriber.workspace = true
+

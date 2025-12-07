@@ -1,48 +1,34 @@
-# rust-project
+# Rust Monorepo Starter
 
-This project is a Rust application designed for learning and building with Rust.
+This repo is a teaching oriented Rust monorepo for learning fundamentals and keeping scale concerns in mind.
 
-## Project Structure
+## Layout
+* Cargo workspace manifest in `Cargo.toml` with shared dependencies and policy
+* `apps/cli`: minimal CLI that exercises shared logic
+* `crates/corelib`: reusable domain and utility code
+* `crates/fundamentals`: hands-on lessons for Rust basics
+* `services/gateway`: HTTP boundary that reuses the shared library
 
-```
-rust-project
-├── src
-│   ├── lib.rs       # Library code for the project
-│   └── main.rs      # Entry point of the application
-├── tests
-│   └── integration_tests.rs  # Integration tests for the project
-├── Cargo.toml       # Cargo configuration file
-└── README.md        # Project documentation
-```
+## Standards
+* Max 150 lines per file
+* Edition 2021 and rust-version 1.80 across all crates
+* Tracing is wired with env based filters for debuggability
 
-## Getting Started
+## Learning path
+1. Run lesson demos in the CLI: `cargo run -p cli -- learn variables`
+   * Options: variables, ownership, borrowing, patterns, collections, collections-ownership, errors, lifetimes, traits, iterators, concurrency, modules, testing, smart-pointers, async-tasks, error-composition, macros, io, serde, tracing-spans, combinators, borrow-checker, file-io, strings, enums, result-flow, async-primer, tooling, cargo, send-sync, unsafe, pinning, drop-raii, concurrency-primitives, performance, api-design, closures, threads
+2. Explore shared utilities in `crates/corelib`
+3. See HTTP wiring in `services/gateway`
 
-To get started with this project, ensure you have Rust and Cargo installed on your machine. You can install them by following the instructions at [rust-lang.org](https://www.rust-lang.org/tools/install).
+## Getting started
+1. Install Rust via rustup and ensure `cargo` is on PATH
+2. Build everything: `cargo build --workspace`
+3. Run tests: `cargo test --workspace`
+4. Run CLI: `cargo run -p cli -- --help`
+5. Run gateway service: `cargo run -p gateway`
 
-### Building the Project
+## Extending
+* Add new libraries under `crates/` and expose narrow APIs
+* Add services or binaries under `services/` or `apps/`
+* Keep binaries thin and push business logic into libraries for reuse
 
-To build the project, navigate to the project directory and run:
-
-```
-cargo build
-```
-
-### Running the Project
-
-To run the project, use the following command:
-
-```
-cargo run
-```
-
-### Running Tests
-
-To run the tests, execute:
-
-```
-cargo test
-```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
