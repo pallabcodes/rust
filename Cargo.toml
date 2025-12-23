@@ -3,6 +3,7 @@ members = [
     "apps/cli",
     "crates/corelib",
     "crates/fundamentals",
+    "crates/production_patterns",
     "services/gateway",
 ]
 resolver = "2"
