@@ -66,7 +66,7 @@ After every learning unit, record what you've learned.
 
 ## 🧩 Case Studies in Systems Thinking
 
-### 🌐 Browsers (The "Graduate Deep Dive")
+### 🌐 Browsers (The "Advanced Deep Dive")
 - **The Core**: HTML Parser + CSS Layout + JS Engine.
 - **The Scale**: GPU Rendering, Multi-process Sandboxing, JIT compilation.
 - **Learning Path**: *Browser Engineering* (Toy) → *NetSurf* (Intermediate) → *Ladybird/Chromium* (Production).
