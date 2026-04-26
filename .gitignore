@@ -6,5 +6,5 @@ Cargo.lock
 **/*.rs.bk
 Cargo.lock
 .DS_Store
-# Upstream Production Repos
-upstream/
+# Reference Production Repos
+references/

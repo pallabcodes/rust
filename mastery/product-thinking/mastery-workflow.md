@@ -30,7 +30,7 @@ mastery/
     │   └── ...
     │
     ├── mapping/                  ← Stage 3: Production repo → invariant alignment
-    │   ├── inv01-[name].md       ← "How does Zed implement INV-01?"
+    │   ├── inv01-[name].md       ← "How does [reference] implement INV-01?"
     │   ├── inv02-[name].md
     │   └── ...
     │
@@ -45,7 +45,7 @@ mastery/
 - **`main`**: Contains the stable Handbook and verified Invariant Core implementations.
 - **`dimension/[name]`**: Branches for heavy Stage 4 experiments (e.g., `dimension/lock-free-buffer`).
 
-### In Upstream Production Repos (e.g., Zed, Ladybird):
+### In Reference Production Repos (e.g., Zed, Ladybird):
 - **`mastery/trace-[invariant]`**: Branches for adding probes/breakpoints to trace a specific invariant's implementation. **Never merge these.**
 
 ---
