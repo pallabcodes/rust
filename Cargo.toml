@@ -3,7 +3,7 @@ members = [
     "apps/cli",
     "crates/corelib",
     "crates/fundamentals",
-    "crates/production_patterns", "mastery/ide/invariant-core/rust-buffer",
+    "crates/production_patterns", "mastery/ide/invariant-core/inv01-buffer",
     "services/gateway",
 ]
 resolver = "2"

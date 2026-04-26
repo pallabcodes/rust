@@ -7,13 +7,13 @@ INV-02 depends on INV-01, INV-03 depends on INV-02, etc.
 
 ## INV-01: Editable Text Model (Buffer)
 
-- [ ] **LU-01.1**: Implement a Piece Table that supports `insert(offset, text)` and `delete(offset, len)`
+- [x] **LU-01.1**: Implement a Piece Table that supports `insert(offset, text)` and `delete(offset, len)`
     - **DoD**: All operations produce correct output verified against naive `String` concatenation
-- [ ] **LU-01.2**: Add `Snapshot` — a thread-safe, immutable clone of buffer state
+- [x] **LU-01.2**: Add `Snapshot` — a thread-safe, immutable clone of buffer state
     - **DoD**: Snapshot taken before edit returns pre-edit content; snapshot taken after returns post-edit
-- [ ] **LU-01.3**: Add `LineMap` — translate `(line, col)` ↔ `absolute_offset` in O(log N)
+- [x] **LU-01.3**: Add `LineMap` — translate `(line, col)` ↔ `absolute_offset` in O(log N)
     - **DoD**: Correctly handles multi-byte UTF-8 and CRLF/LF line endings
-- [ ] **LU-01.4**: Map to Zed — locate Zed's Rope implementation, document differences vs Piece Table
+- [x] **LU-01.4**: Map to Zed — locate Zed's Rope implementation, document differences vs Piece Table
     - **DoD**: Written comparison in `mapping/inv01-buffer.md`
 
 ## INV-02: Change Propagation System

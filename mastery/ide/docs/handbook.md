@@ -163,7 +163,7 @@ mastery/ide/
 
 | # | Invariant | Status |
 |---|-----------|--------|
-| 01 | Buffer | `[ ]` Not started |
+| 01 | Buffer | `[x]` Complete |
 | 02 | Change Stream | `[ ]` Not started |
 | 03 | Incremental Parser | `[ ]` Not started |
 | 04 | Global Index | `[ ]` Not started |

@@ -2,7 +2,9 @@ use std::sync::Arc;
 use tracing::{info, debug, instrument};
 
 pub mod piece_table;
+pub mod line_map;
 use piece_table::{Piece, Source};
+use line_map::LineMap;
 
 /// A snapshot of the buffer at a specific point in time.
 /// Highly efficient to clone and thread-safe for background processing (AI/LSP).
